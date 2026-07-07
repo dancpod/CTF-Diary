@@ -1,2 +1,11 @@
 # CTF-Diary
-My personal log of TryHackMe and CTF challenges — writeups, reasoning, and lessons learned along the way.
+
+Cybersecurity student, still early in the journey. I break things (on purpose) through CTF challenges. My personal log, documenting everything: writeups, reasoning, and lessons learned along the way.
+
+## Writeups
+
+### TryHackMe
+- [Basic Pentesting](TryHackMe/easy-web-basic-pentesting.md)
+
+## Template
+Want to write your own structured writeup? Use this [template](TEMPLATE.md).
