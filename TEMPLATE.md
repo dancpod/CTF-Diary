@@ -12,7 +12,7 @@
 ## Process
 [Reconnaissance, enumeration, exploitation, including failed attempts — in chronological order]
 
-![Description of what this screenshot shows](images/[filename]-01.png)
+![Description of what this screenshot shows](images/[filename]-01.png)  
 *The photo can be positioned in varies part of Process Block*
 
 ## Lessons Learned
