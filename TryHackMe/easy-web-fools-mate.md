@@ -27,7 +27,7 @@ nmap 10.114.148.199
  
 Result: two open ports — SSH (22) and HTTP (80). No credentials for SSH, so I started from HTTP.
  
-![nmap scan showing ports 22 and 80 open](/images/easy-web-fools-mate-01.png)
+![nmap scan showing ports 22 and 80 open](images/easy-web-fools-mate-01.png)
  
 ---
  
@@ -35,7 +35,7 @@ Result: two open ports — SSH (22) and HTTP (80). No credentials for SSH, so I 
  
 Visited `http://10.114.148.199` in the browser. Found a chess board labeled "Mate-in-one · White to move". The winning move is clear: the white rook on a1 goes to a8, delivering checkmate.
  
-![chess board showing the starting position](/images/easy-web-fools-mate-02.png)
+![chess board showing the starting position](images/easy-web-fools-mate-02.png)
  
 ---
  
@@ -47,7 +47,7 @@ I tried moving the rook from a1 to a8 directly on the board. A JavaScript popup 
  
 This is a JavaScript alert — it runs entirely in the browser, not on the server. That means it's **client-side**, and can be bypassed.
  
-![JavaScript popup blocking the move](/images/easy-web-fools-mate-03.png)
+![JavaScript popup blocking the move](images/easy-web-fools-mate-03.png)
  
 ---
  
@@ -55,7 +55,7 @@ This is a JavaScript alert — it runs entirely in the browser, not on the serve
  
 I tried other moves to understand how the app worked. Moving a different piece (Ra1-a7) went through and the engine responded with Kh8. This confirmed that the app does communicate with the server — it's only the winning move that gets blocked client-side.
  
-![a legal move going through — Ra7 Kh8](/images/easy-web-fools-mate-04.png)
+![a legal move going through — Ra7 Kh8](images/easy-web-fools-mate-04.png)
  
 ---
  
@@ -69,11 +69,11 @@ I opened the request and checked:
 This told me two things:
 1. The server is reachable directly.
 2. I just need to send the correct move.
-![Network tab showing POST /move with status 400](/images/easy-web-fools-mate-05.png)
+![Network tab showing POST /move with status 400](images/easy-web-fools-mate-05.png)
  
-![Response showing ok: false and error: illegal move](/images/easy-web-fools-mate-06.png)
+![Response showing ok: false and error: illegal move](images/easy-web-fools-mate-06.png)
  
-![Request body showing from: a1, to: a2](/images/easy-web-fools-mate-07.png)
+![Request body showing from: a1, to: a2](images/easy-web-fools-mate-07.png)
  
 ---
  
@@ -89,7 +89,7 @@ curl -X POST http://10.114.148.199/api/move \
  
 The server responded with `ok: true`, `status: checkmate`, and the flag.
  
-![curl command and server response with the flag](/images/easy-web-fools-mate-08.png)
+![curl command and server response with the flag](images/easy-web-fools-mate-08.png)
  
 ---
  
