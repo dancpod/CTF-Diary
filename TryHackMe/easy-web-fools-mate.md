@@ -69,11 +69,18 @@ I opened the request and checked:
 This told me two things:
 1. The server is reachable directly.
 2. I just need to send the correct move.
+
 ![Network tab showing POST /move with status 400](images/easy-web-fools-mate-05.png)
+
+- The Network tab shows the POST request to /move with status 400 — the request reached the server, but was rejected.
  
 ![Response showing ok: false and error: illegal move](images/easy-web-fools-mate-06.png)
+
+- The Response tab confirms: ok: false, error: "illegal move". The server received the move but the coordinates were wrong — the popup interrupted before sending the correct destination.
  
 ![Request body showing from: a1, to: a2](images/easy-web-fools-mate-07.png)
+
+The Request tab shows what the browser actually sent: from: "a1", to: "a2" — the wrong square. Now I know the correct body to send manually.
  
 ---
  
