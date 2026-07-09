@@ -1,7 +1,7 @@
 # Fool's Mate
  
-| | |
-|---|---|
+| Field       | Info                                                                 |
+-------------|----------------------------------------------------------------------|
 | **Platform** | TryHackMe |
 | **Link** | https://tryhackme.com/room/foolsmate |
 | **Difficulty** | Easy |
