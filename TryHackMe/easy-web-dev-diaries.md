@@ -1,10 +1,12 @@
-# [Room name] — TryHackMe
+# Dev Diaries — TryHackMe
 
-**Link:** 
-**Difficulty:** 
-**Category:** 
-**Date:** 
-**Time spent:** 
+| Field       | Info                                                                 |
+|-------------|----------------------------------------------------------------------|
+| Platform    | [TryHackMe](https://tryhackme.com/room/devdiaries)          |
+| Difficulty  | Easy                                                                 |
+| Category    | Web                                                                  |
+| Date        | 13/07/2026                                                           |
+| Time spent  | ~35 minutes                                                          |
 
 ## Challenge Description
 [What the room asks you to do, briefly]
@@ -12,8 +14,6 @@
 ## Process
 [Reconnaissance, enumeration, exploitation, including failed attempts — in chronological order]
 
-![Description of what this screenshot shows](images/[filename]-01.png)  
-*The photo can be positioned in varies part of Process Block*
 
 ## Lessons Learned
 [What you learned, what you'd do differently]
