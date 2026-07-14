@@ -2,7 +2,7 @@
 
 | Field       | Info                                                                 |
 |-------------|----------------------------------------------------------------------|
-| Platform    | [TryHackMe](https://tryhackme.com/room/devdiaries)          |
+| Platform    | [https://tryhackme.com/room/devdiaries](https://tryhackme.com/room/devdiaries)          |
 | Difficulty  | Easy                                                                 |
 | Category    | Web                                                                  |
 | Date        | 13/07/2026                                                           |
