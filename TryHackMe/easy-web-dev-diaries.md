@@ -9,7 +9,7 @@
 | Time spent  | ~35 minutes                                                          |
 
 ## Challenge Description
-[What the room asks you to do, briefly]
+In this challenge, the only starting point is a domain — and it's offline. The goal is to dig through whatever traces remain online to uncover information about the developer.
 
 ## Process
 [Reconnaissance, enumeration, exploitation, including failed attempts — in chronological order]
